@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bowling Tracker</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="tracker.css">
+	</head>
+	<body>
+		<h1>Bowling Tracker</h1>
+		<fieldset id="playerInfo">
+			<legend>Bowler Name</legend>
+			<form id="player">
+				<p>Please enter your name</p>
+				<input type="text" placeholder="Enter Players Name" name="playerName" id="playerName"><br><br>
+			</form>
+		</fieldset>
+		<fieldset id="leageInfo">
+			<legend>League Information</legend><br>
+			<form id="league">
+				<label>Please enter the League Name</label><br><br>
+				<input type="text" placeholder="Please enter League Name" name="leagueName"><br><br>
+				<label>Is the leage sanctioned?</label><br>
+				<input type="radio" name="sanction" value="Yes" checked="true">Yes
+				<input type="radio" name="sanction" value="No">No<br><br>
+				<label>Handicap Calculator</label><br><br>
+				<input type="number" name="handicapPercent" min="0" max="100">&nbsp;% of&nbsp;
+				<input type="number" name="handicapScore" min="0" max="300"><br><br>
+				<label>Initial Average</label>
+				<input type="number" name="initAvg" min="0" max="300"><br><br>
+				<label>Games until average is established</label>&nbsp;
+				<input type="number" name="numGames" min="0"><br>
+				<label>Does the league use Retroactive Handicapping</label>
+				<input type="radio" name="retroYes">Yes
+				<input type="radio" name="retroNo">No
+			</form>
+		</fieldset>
+		<fieldset id="gameInfo">
+			<legend>Game Information</legend>
+			<form id="game">
+				<label>Please enter date of series</label><br><br>
+				<input type="date" name="seriesDate"><br><br>
+				<label>Please enter your game score(s)</label><br><br>
+				<input type="number" name="gameScore" id="gameScore" min="0" max="300">&nbsp;
+				<button type="button" name="addGame" id="addGame">Add Game</button><br><br>
+				<button type="button" name="calcuate" id="calculate">Calculate Average</button>
+			</form>
+		</fieldset>
+		<br>
+		<button type="submit" name="showStats" id="calcStats">Show my Statistics</button>
+		<script type="text/javascript" src="tracker.js"></script>
+	</body>
+</html>

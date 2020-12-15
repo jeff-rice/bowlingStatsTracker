@@ -1,0 +1,53 @@
+body {
+	color: white;
+	background-image: url(./images/bowlingBackground.png);
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	background-size: 100%;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 48px;
+}
+
+legend {
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+input[type="number"] {
+	width: 30px;
+}
+
+input[name="handicapScore"], input[name="handicapPercent"], input[name="initAvg"] {
+	width: 40px;
+}
+
+#playerInfo input {
+	height: 20px;
+}
+
+#gameInfo input[type="number"] {
+	width: 40px;
+}
+
+button[type="submit"] {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	height: 30px;
+	font-size: 22px;
+}
+
+button[name="calculate"] {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 18px;
+}
